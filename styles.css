@@ -1,0 +1,95 @@
+:root {
+  --background: #FF7F50;
+  --white: #fff;
+  --black: #000;
+  --orange: #FFAC1C;
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+body {
+  background: var(--background);
+}
+
+/* Intro */
+#intro {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
+  color: var(--white);
+}
+#intro h1,
+#intro h2 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  margin-top: 2em;
+}
+
+input[type=text] {
+  padding:5px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type=text]:focus {
+  border-color: var(--background);
+
+}
+
+#btn,
+#resetGame,
+#rollDice {
+  display: block;
+  margin: 2em auto;
+  padding: 1em 2em;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--background);
+  font-weight: bold;
+  border-radius: 5px;
+
+}
+
+
+/* reset btn */
+#resetGame {
+  display: none;
+}
+
+.active {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 2px, rgba(14, 30, 37, 0.32) 0px 2px 16px 2px;
+}
+
+
+/* Game */
+#game {
+  display: none;
+
+}
+
+.dice {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--white);
+  margin: 0 auto;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
